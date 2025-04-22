@@ -1,0 +1,10 @@
+.scrolling-space{
+  position: fixed;
+  background-color:$color-primary;
+  height: 4px;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  animation: scroll-space auto linear;
+  animation-timeline: --page-scroll;
+}

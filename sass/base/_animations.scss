@@ -1,0 +1,50 @@
+@keyframes scaleBtn {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleX(1.3) scaleY(1.4);
+  }
+}
+
+@keyframes btnAnimated {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1.5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes scroll-space {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+}

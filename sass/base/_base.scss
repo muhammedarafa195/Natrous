@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62%;
+  overflow: hidden;
+  scroll-timeline: --page-scroll block;
+  @include respond(tab-land){
+    font-size: 56.25%;
+  }
+  @include respond(tab-port){
+    font-size: 50%;
+  }
+  @include respond(big-desktop){
+    font-size: 75%;
+  }
+}
+::selection{
+  background-color:$color-primary;
+  color: $color-white;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #7ed56f, #28b485);
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #28b485, #7ed56f);
+  border-radius: 8px;
+}
+
+/* Hover Effect */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #1e9c76, #6bcb5f);
+}
+
+/* Scrollbar Size */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
